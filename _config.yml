@@ -110,9 +110,16 @@ markdown:
     breaks: true
     linkify: true
     typographer: true
+    quotes: '""'''
   plugins:
-    - markdown-it-highlightjs
-    - markdown-it-mark  # 这个插件用于处理 == 高亮语法
+    - markdown-it-mark # mark 高亮
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
