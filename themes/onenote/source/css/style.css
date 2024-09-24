@@ -1,31 +1,37 @@
 /* Global Variables */
 :root {
-    --font-color-primary: #444444;
-    --font-color-secondary: #DD4C4F;
-    --font-color-tertiary: #999999;
-    --bg-color-primary: #fcfcfc;
-    --bg-color-secondary: #ffffff;
-    --line-color: #f3f3f3;
+    /* Color scheme */
+    --color-primary: #444444;
+    --color-secondary: #DD4C4F;
+    --color-tertiary: #999999;
+    --color-bg-primary: #fcfcfc;
+    --color-bg-secondary: #ffffff;
+    --color-border: #f3f3f3;
+
+    /* Typography */
+    --font-main: NotoSansSC, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Arial, Meiryo, sans-serif;
+    --font-size-base: 15px;
+    --line-height-base: 2rem;
 }
 
-/* Global Styles */
+/* Base Styles */
 body {
-    font-family: NotoSansSC, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Arial, Meiryo, sans-serif;
-    font-size: 15px;
-    line-height: 2rem;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
     letter-spacing: 0.1px;
-    color: var(--font-color-primary);
-    background: var(--bg-color-primary);
+    color: var(--color-primary);
+    background: var(--color-bg-primary);
 }
 
 a {
     text-decoration: none;
-    color: var(--font-color-primary);
-    transition: color ease-in-out 0.5s;
+    color: var(--color-primary);
+    transition: color 0.5s ease-in-out;
 }
 
 a:hover {
-    color: var(--font-color-secondary);
+    color: var(--color-secondary);
 }
 
 /* Layout */
@@ -37,7 +43,7 @@ a:hover {
     max-width: 1000px;
     margin: 0 auto;
     padding: 72px 5vw;
-    background: var(--bg-color-secondary);
+    background: var(--color-bg-secondary);
     border-radius: 4px;
 }
 
@@ -93,27 +99,27 @@ a:hover {
 }
 
 .read-more {
-    color: var(--font-color-primary);
+    color: var(--color-primary);
 }
 
-.read-more:before,
-.read-more:after {
+.read-more::before,
+.read-more::after {
     display: inline-block;
-    transition: transform ease-in-out 0.25s;
+    transition: transform 0.25s ease-in-out;
 }
 
-.read-more:before { content: ""; }
-.read-more:after { content: ""; }
+.read-more::before { content: ""; }
+.read-more::after { content: ""; }
 
-.read-more:hover:before { transform: translateX(-4px); }
-.read-more:hover:after { transform: translateX(4px); }
+.read-more:hover::before { transform: translateX(-4px); }
+.read-more:hover::after { transform: translateX(4px); }
 
 /* Post Meta Styles */
 .post-meta {
     display: flex;
     align-items: center;
     font-size: 15px;
-    color: var(--font-color-tertiary);
+    color: var(--color-tertiary);
     margin-bottom: 40px;
 }
 
@@ -129,7 +135,7 @@ a:hover {
 
 .post-tag {
     margin-right: 10px;
-    color: var(--font-color-tertiary);
+    color: var(--color-tertiary);
 }
 
 .post-tag:hover {
@@ -154,7 +160,7 @@ a:hover {
 .paginator * {
     padding: 8px 16px;
     border-radius: 18px;
-    background: var(--bg-color-secondary);
+    background: var(--color-bg-secondary);
     border: 1px solid #eee;
 }
 
@@ -163,8 +169,8 @@ a:hover {
 }
 
 .paginator .current {
-    color: var(--font-color-primary);
-    border-color: var(--font-color-primary);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 /* Footer Styles */
@@ -174,7 +180,7 @@ a:hover {
     align-items: center;
     padding: 60px 0 40px;
     font-size: 0.813rem;
-    color: var(--font-color-tertiary);
+    color: var(--color-tertiary);
 }
 
 .footer span {
@@ -182,7 +188,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-/* Archive Styles */
+/* Archive and Tags Styles */
 .archive,
 .tags {
     display: flex;
@@ -198,7 +204,7 @@ a:hover {
 .archive li span,
 .tags li span {
     width: 108px;
-    color: var(--font-color-primary);
+    color: var(--color-primary);
 }
 
 .archive-main,
@@ -208,7 +214,7 @@ a:hover {
 
 .archive-title,
 .tags-title {
-    color: var(--font-color-primary);
+    color: var(--color-primary);
 }
 
 .archive-list h2,
@@ -223,7 +229,7 @@ a:hover {
     display: flex;
     margin-top: 40px;
     font-size: 15px;
-    color: var(--font-color-tertiary);
+    color: var(--color-tertiary);
 }
 
 .post-content-meta.tags .emo {
