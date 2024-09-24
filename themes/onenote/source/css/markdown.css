@@ -27,13 +27,13 @@
     --document-selection-inactive-color: var(--base-background-tertiary-color);
 
     /* Typography */
-    --document-text-font: "AvenirNext-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --document-text-font: "NotoSansSC", -apple-system;
     --document-text-size: 15px;
     --document-line-height-multiplier: 1.75;
     
     /* Header styles */
     --document-headers-text-color: var(--base-text-color);
-    --document-headers-font: "AvenirNext-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --document-headers-font: "NotoSansSC", -apple-system;
     --document-headers-line-height-multiplier: 1.5;
 
     /* Code styles */
@@ -131,7 +131,7 @@ body {
 
 /* Lists */
 .post-body ul, .post-body ol {
-    padding-left: 2em;
+    padding-left: 1em;
     margin-bottom: 1em;
 }
 
@@ -156,7 +156,7 @@ body {
     margin-left: 0;
     padding-left: 1em;
     border-left: 4px solid var(--document-list-marker-color);
-    color: var(--document-text-secondary-color);
+    color: var(--base-text-color);
 }
 
 /* Code blocks and inline code */

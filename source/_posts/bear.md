@@ -1,11 +1,11 @@
 ---
-title: blog template
+title: bear
 tags:
 	- vw3x
 	- v2ex
 date: 2024-05-06 
 ---
-# Blog Template
+# bear
 
 
 ## H2 TITLE
@@ -78,6 +78,10 @@ qweqwe
 
 [^1][^2][^3][^4][^5]
 
+rere[^6]
+
+wewqe[^7]
+
 - - -
 Sep 23, 2024
 
@@ -90,7 +94,7 @@ Sep 23, 2024
 | 2023 | Population Growth Rate |     | 0.35% (Census, 2024).                                        |
 | 2023 | Education Level        |     | High school graduate or higher: 90.5%<br>Bachelor's degree or higher: 37.9%<br>(Census, 2024). |
 
-![](Blog%20Template/image.png)
+![](bear/image.png)
 ![](https://cdn.jsdelivr.net/gh/CourseRye/ScreenShot@master/uPic/9a6xun.png)
 
 
@@ -101,4 +105,6 @@ Sep 23, 2024
 [^3]: footnote text
 [^4]: footnote text
 [^5]: footnote text
+[^6]: footnote text
+[^7]: footnote text
 

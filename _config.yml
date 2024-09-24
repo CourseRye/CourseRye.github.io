@@ -103,6 +103,17 @@ theme: onenote
 toc:
   maxdepth: 3
 
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+  plugins:
+    - markdown-it-highlightjs
+    - markdown-it-mark  # 这个插件用于处理 == 高亮语法
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
