@@ -21,7 +21,7 @@ const sortedPosts = sortPosts(page.posts.data);
         <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
         <div class="post-except">
             <%- strip_html(post.content).substr(0, 240) %>
-            <a class="read-more" href="<%- url_for(post.path) %>"> ...... </a>
+            <a class="read-more" href="<%- url_for(post.path) %>"> ……</a>
         </div>
         <div class="post-meta">
             <div class="post-date"><%- date(post.date, "YYYY-MM-DD") %></div>
