@@ -1,8 +1,20 @@
+---
+title: 硝烟中的 Scrum 和 XP
+slug: xioayan-scrm-xp
+---
 # 02 硝烟中的 Scrum 和 XP ★★★★☆
 
 ## 如何编写产品待办列表 Product Backlog
 
 ## 用户故事 User Story 包含以下字段：
+
+
+```
+qweqweqweqweqweqwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+qweqweqwe
+```
+
 
 * **ID：**统一标识符，⾃增⻓的数字，用来防止重命名名故事称后，无法搜索到故事。
 * **名称：**简短的、描述性的。⽐如「查看你⾃⼰的交易明细」。它必须要含义明确，这样开发⼈员和产品负责⼈才能⼤致明⽩我们说的是什么东⻄，跟其他故事区分开。它⼀般由 2 到 10 个字组成。
